@@ -23,13 +23,6 @@
     <label class="label" for="prix">Prix: </label>
     <input autofocus="autofocus" placeholder="euros"  class="input" type="text" name="prix" size="50" maxlength="40" id="prix" /></br>
 
-    <!-- <label class="label" for="image">Photo du plat: </label>
-    <input type="image" name="image" size="50" maxlength="40" id="image" class="input" /> -->
-
-    <!-- <label for="image">Votre photo de plat :</label>
-    <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
-    <input type="file" name="image" id="image" /></br> -->
-
   <input type="submit" name="commit" value="Ajout" id="btn" /></br>
    </fieldset>
   </form>
