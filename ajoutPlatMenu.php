@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Completer le menu</h1>
-    <p id="clair">Retour création de menu: <a class="link" href="creerMenu.php">ici</a></p>
-    <p id="clair">Retour création de plat: <a class="link" href="creerPlat.php">ici</a></p>
+<?php
+include('include/header.php');
+ ?>
+    <h2>Completer le menu</h2>
+    <p class="clair">Retour création de menu: <a class="link" href="creerMenu.php">ici</a></p>
+    <p class="clair">Retour création de plat: <a class="link" href="creerPlat.php">ici</a></p>
     <?php
     // Connexion à la base de données
     include("config/connection.php");
 
     $reponse = $bdd->query('SELECT menu.id_plat AS id_plat_menu, menu.id AS id_menu, menu.nom AS nom_menu FROM  menu');
-    echo '<form method="post" action="traitementAjout.php"><p>Cochez les plats à ajouter au menu: </p>';
+    echo '<form id="form" method="post" action="traitementAjout.php"><p>Selectionner un menu à modifier: </p>';
      echo '<select name="menu">';
 
 			while ($donnees = $reponse->fetch())
@@ -39,7 +35,6 @@
 
 
     ?>
-
-
-  </body>
-</html>
+    <?php
+    include('include/footer.php');
+     ?>

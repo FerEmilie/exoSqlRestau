@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Restaurant</title>
-   <link href=""rel="stylesheet">
-
-  </head>
-  <body>
-<div class="container">
+<?php
+include('include/header.php');
+ ?>
 
 <div class="form">
-  <h1>Ajouter un nouveau plat</h1>
-  <p id="clair">Afficher la liste des plats existants: <a class="link" href="plat.php">ici</a></p>
+  <h2>Ajouter un nouveau plat</h2>
+  <p class="clair">Afficher la liste des plats existants: <a class="link" href="plat.php">ici</a></p>
 
   <form id="form" action="traitement.php" method="post">
     <fieldset>
@@ -35,6 +28,6 @@
   </form>
 </div>
 </div>
-
-  </body>
-</html>
+<?php
+include('include/footer.php');
+ ?>

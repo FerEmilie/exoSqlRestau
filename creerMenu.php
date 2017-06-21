@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Restaurant</title>
-   <link href=""rel="stylesheet">
-
-  </head>
-  <body>
-<div class="container">
+<?php
+include('include/header.php');
+ ?>
 
 <div class="form">
-  <h1>Ajouter un nouveau menu</h1>
-  <p id="clair">Afficher la liste des menu existants: <a class="link" href="menu.php">ici</a></p>
-  <p id="clair">Ajouter des plats au menu: <a class="link" href="ajoutPlatMenu.php">ici</a></p>
+  <h2>Ajouter un nouveau menu</h2>
+  <p class="clair">Afficher la liste des menu existants: <a class="link" href="menu.php">ici</a></p>
+  <p class="clair">Ajouter des plats au menu: <a class="link" href="ajoutPlatMenu.php">ici</a></p>
   <form id="form" action="traitementMenu.php" method="post">
     <fieldset>
 
@@ -28,6 +21,6 @@
   </form>
 </div>
 </div>
-
-  </body>
-</html>
+<?php
+include('include/footer.php');
+ ?>
