@@ -12,15 +12,35 @@ body{
   background-size: cover;*/
   background-color: #fcf7f4;
   font-family: op;
-  text-align: center;
+  text-align: justify;
 }
 header{
   text-align: center;
   font-size: 50px;
   font-family: rie;
   font-weight: lighter;
+  background-image: url('../img/header2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+#logo{
+  text-align: left;
 }
 .index{
+  margin-left: 200px;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  border: 2px black dashed;
+  border-radius: 20px;
+  width: 70%;
+}
+#centrer{
   text-align: center;
 }
 .index a{
@@ -33,13 +53,16 @@ header{
 }
 h2{
   font-size: 30px;
+  margin-left: 100px;
 }
 .clair{
   font-size: 20px;
+  margin-left: 100px;
 }
 #form{
    text-align: center;
    margin-bottom: 40px;
+   margin-top: 40px;
  }
  #retour{
    font-size: 25px;
@@ -65,10 +88,26 @@ h2{
    color: red;
    text-decoration: overline;
  }
+ #form{
+   width: 60%;
+   text-align: justify;
+   margin-left: 50px;
+ }
+ input{
+   height: 25px;
+ }
+ .plat, .menu{
+   margin-left: 400px;
+   width: 40%;
+   border: 2px black dashed;
+   text-align: center;
+   border-radius: 20px;
+ }
 footer{
   background-color: black;
   height: auto;
   padding: 30px;
+  text-align: center;
 }
 footer a{
     color: white;

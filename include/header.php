@@ -7,7 +7,11 @@
   </head>
   <body>
     <header>
-      <img src="assets/img/images.jpeg" alt="logo" />
-      <a id="retour" href="index.php">Retour à l'accueil</a>
-      <h1>Bienvenue au restaurant</h1>
+      <div id="logo">
+        <!-- <img src="assets/img/images.jpeg" alt="logo" /> -->
+        <a id="retour" href="index.php">Retour à l'accueil</a>
+      </div>
+
+      <h1>Bienvenue au restaurant</br>MySql</h1>
+
     </header>

@@ -2,6 +2,7 @@
   <img src="assets/img/footer.jpeg" alt="panier de legumes">
 </div>
 <footer>
+  <a href="#">© coucou</a>
   <a href="#">Contact</a>
   <a href="#">Reservation</a>
   <a href="#">Nous trouver</a>

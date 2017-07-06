@@ -6,7 +6,7 @@ include('include/header.php');
 include("config/connection.php");
 // Récupération des 10 derniers messages
 
-$reponse = $bdd->query('SELECT * FROM plat');
+$reponse = $bdd->query('SELECT * FROM plat ORDER BY prix');
 
 
 echo '<div class="plat"><h2>Liste des plats</h2><ul>';
