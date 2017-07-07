@@ -6,11 +6,16 @@
 	{
 		$nvPlat = intval($_POST['checkbox']);
     var_dump($nvPlat);
-    // $idMenu = intval($_POST['menu']);
-    // var_dump($idMenu);
-    $req = $bdd->prepare('UPDATE menu SET id_plat=:checkbox WHERE id=:menu');
-    $req->execute(array('checkbox' => $nvPlat, 'menu' => $_POST['menu']));
-    header('Location: ajoutPlatMenu.php');
+    $nvMenu = intval($_POST['menu']);
+    var_dump($nvMenu);
+
+    $req = $bdd->prepare('INSERT INTO menu_plat(id_menu, id_plat) VALUES(:menu, :checkbox)');
+    $req->execute(array(
+    	'menu' => $nvMenu,
+    	'checkbox' => $nvPlat
+    	));
+
+    header('Location: menu.php');
 	}
 	else
 	{

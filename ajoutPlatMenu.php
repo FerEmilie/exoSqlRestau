@@ -20,7 +20,7 @@ include('include/header.php');
 			}
        echo '</select>';
 
-       $reponse2 = $bdd->query('SELECT plat.id AS id_plat, plat.nom AS nom_plat FROM plat');
+       $reponse2 = $bdd->query('SELECT plat.id AS id_plat, nom_plat FROM plat');
        echo '<form method="post" action="traitementAjout.php"><p>Cochez les plats à ajouter au menu: </p>';
 
         while ($donnees2 = $reponse2->fetch())
