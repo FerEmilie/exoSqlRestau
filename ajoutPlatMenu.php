@@ -26,7 +26,7 @@ include('include/header.php');
         while ($donnees2 = $reponse2->fetch())
         {
 
-				echo'<input type="checkbox" name="checkbox" value="'.$donnees2['id_plat'].'" />'.$donnees2['nom_plat'];
+				echo'<input type="checkbox" name="checkbox[]" value="'.$donnees2['id_plat'].'" />'.$donnees2['nom_plat'];
 
         }
 
