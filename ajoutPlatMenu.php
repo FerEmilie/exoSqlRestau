@@ -8,7 +8,7 @@ include('include/header.php');
     // Connexion à la base de données
     include("config/connection.php");
 
-    $reponse = $bdd->query('SELECT menu.id_plat AS id_plat_menu, menu.id AS id_menu, menu.nom AS nom_menu FROM  menu');
+    $reponse = $bdd->query('SELECT menu.id AS id_menu, menu.nom AS nom_menu FROM  menu');
     echo '<form id="form" method="post" action="traitementAjout.php">';
     echo '<fieldset><legend>Selectionner un menu à modifier</legend><br/>';
      echo '<select name="menu">';

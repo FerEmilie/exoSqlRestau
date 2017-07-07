@@ -97,8 +97,8 @@ h2{
    height: 25px;
  }
  .plat, .menu{
-   margin-left: 400px;
-   width: 40%;
+   margin:auto;
+   width: 55%;
    border: 2px black dashed;
    text-align: center;
    border-radius: 20px;
