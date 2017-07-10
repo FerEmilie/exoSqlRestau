@@ -1,5 +1,6 @@
 <?php
 include('include/header.php');
+include('include/barrenav.php');
  ?>
 
 <div class="form">

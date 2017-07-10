@@ -3,10 +3,10 @@ include('include/header.php');
 include('include/barrenav.php');
  ?>
 
-    <form id="form" method="post" action="traitementUpdate.php?id=<?php echo $_GET['id']; ?>">
+    <form id="form" method="post" action="traitementUpdateMenu.php?id=<?php echo $_GET['id']; ?>">
       <fieldset>
-        <legend>Vous avez choisi de modifier le plat n°: <?php echo $_GET['id']; ?> </legend>
-         <label class="label" for="nom">Nouveau Nom du plat: </label>
+        <legend>Vous avez choisi de modifier le menu n°: <?php echo $_GET['id']; ?> </legend>
+         <label class="label" for="nom">Nouveau Nom du menu: </label>
          <input autofocus="autofocus" required="required" class="input" type="text" name="nom" size="50" maxlength="40" id="nom" /></br></br>
 
          <label class="label" for="prix">Nouveau Prix: </label>

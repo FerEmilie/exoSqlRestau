@@ -1,5 +1,6 @@
 <?php
 include('include/header.php');
+include('include/barrenav.php');
  ?>
     <h2>Completer le menu</h2>
     <p class="clair">Retour création de menu: <a class="link" href="creerMenu.php">ici</a></p>

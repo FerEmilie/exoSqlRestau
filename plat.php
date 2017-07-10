@@ -1,11 +1,6 @@
-
-<!-- $reponse = $bdd->query('SELECT image, plat.id as id_plat, prix, type_plat, GROUP_CONCAT(nom_plat SEPARATOR " - ") AS concat_nom_plat FROM plat
-LEFT JOIN categorie ON id_type_plat= categorie.id
-GROUP BY categorie.id
-ORDER BY prix'); -->
-
  <?php
  include('include/header.php');
+ include('include/barrenav.php');
   ?>
  <?php
  // Connexion à la base de données

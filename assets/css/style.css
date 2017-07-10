@@ -1,11 +1,42 @@
 @media all and (max-width: 640px) {
-   header{
-     display: none;
-   }
-   .menu{
-     display: block;
+   header>h1{
+     /*display: none;*/
+     font-size: 50%;
 
    }
+
+   footer{
+     display: none;
+   }
+   .menu>h2{
+     margin-left: 0px;
+     font-size: 130%;
+   }
+   .menu>li{
+    display: block;
+   }
+   #baniere{
+     display: none;
+   }
+   img{
+     display: none;
+   }
+   .plat, .menu{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     margin: auto;
+      }
+      ul{
+        padding: 5px;
+        display: inline;
+      }
+    .menu{
+      background-image: none;
+    }
+    .plat{
+      padding-left:40px;
+    }
 }
 @font-face {
   font-family: "rie";
@@ -34,10 +65,9 @@ header{
   background-position: center;
   border-radius: 20px;
   border: 2px solid black;
-  height: 400px;
+  height: auto;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 30px;
 }
 #logo{
   text-align: left;
