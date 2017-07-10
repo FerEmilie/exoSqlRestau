@@ -7,7 +7,7 @@ include("config/connection.php");
 $req = $bdd->prepare('INSERT INTO menu (nom, prix) VALUES(:nom, :prix)');
 $req->execute(array('nom' => $_POST['nom'], 'prix' => $_POST['prix']));
 // Redirection du visiteur vers la page du minichat
-header('Location: creerMenu.php');
+header('Location: ajoutPlatMenu.php');
 
 
 ?>

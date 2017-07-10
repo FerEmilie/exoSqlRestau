@@ -1,23 +1,15 @@
 <?php
 include('include/header.php');
  ?>
-<div id="centrer">
-  <h1>Gestionnaire du restaurant</h1>
-  <p>Que voulez vous faire ?</p>
+
+<div class="accueil">
+   <h1>Notre histoire...</h1>
+   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac diam scelerisque, egestas diam a, suscipit felis. Suspendisse ultrices venenatis neque vel accumsan. Ut ante ante, euismod egestas ultricies eleifend, elementum eget orci. Nullam varius, magna ac scelerisque euismod, nunc sapien malesuada nulla, et pellentesque sapien felis at ligula. Nullam eget ornare justo, vitae blandit purus. Ut finibus mauris neque, interdum lacinia nunc viverra quis. In non efficitur nulla, vitae porttitor orci. Quisque pharetra mollis mauris quis rhoncus. Morbi congue dui aliquam velit rutrum, et egestas velit ultricies. Nullam molestie, purus vitae consequat interdum, mauris mauris accumsan lectus, at posuere urna urna id mi. Sed lacinia hendrerit enim, sed feugiat lectus accumsan at. Donec vestibulum malesuada metus, in euismod elit pharetra lobortis. Cras mi arcu, congue ut porta in, tempus quis arcu. Donec faucibus viverra suscipit. Nam neque diam, blandit at nisi eget, cursus egestas diam.
+
+Sed vulputate nec tellus non iaculis. Morbi ornare, ante eget hendrerit efficitur, nisl mi porttitor enim, a aliquam enim velit eget turpis. Maecenas commodo mattis consectetur. Mauris eget quam quis est posuere sollicitudin non et tortor. Nullam commodo aliquam purus. Duis id ante mi. Nulla eget finibus dolor. </p>
+   <a href="gestion.php"><img id="cuisine" src="assets/img/cuisine.jpg" alt="cuisine"></a>
 </div>
 
-    <div class="index">
-       <div id="nav1">
-      <h2>Création de plat/menu</h2>
-        <p class="clair">Créer un menu <a class="link" href="creerMenu.php">ici</a></p>
-        <p class="clair">Créer un plat <a class="link" href="creerPlat.php">ici</a></p>
-      </div>
-      <div id="nav2">
-      <h2>Liste des plats/menus</h2>
-        <p class="clair">Liste des menus <a class="link" href="menu.php">ici</a></p>
-        <p class="clair">Liste des plats <a class="link" href="plat.php">ici</a></p>
-      </div>
-    </div>
 <?php
 include('include/footer.php');
  ?>
