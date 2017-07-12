@@ -12,10 +12,10 @@ include('include/barrenav.php');
 
         <legend>Création de nouveau menu</legend>
     <label class="label" for="nom">Nom du menu: </label>
-    <input autofocus="autofocus" required="required" class="input" type="text" name="nom" size="50" maxlength="40" id="nom" /></br></br>
+    <input autofocus="autofocus" required="required" class="input" type="text" name="nom" maxlength="40" id="nom" /></br></br>
 
     <label class="label" for="prix">Prix: </label>
-    <input autofocus="autofocus" placeholder="euros"  class="input" type="text" name="prix" size="50" maxlength="40" id="prix" /></br></br>
+    <input autofocus="autofocus" placeholder="euros"  class="input" type="text" name="prix" maxlength="40" id="prix" /></br></br>
 
   <input type="submit" name="commit" value="Ajout" id="btn" /></br></br>
    </fieldset>

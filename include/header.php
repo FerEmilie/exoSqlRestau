@@ -5,8 +5,9 @@
     <title>Restaurant</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/baniere.css">
+    <link rel="icon" href="assets/img/favicon.ico">
   </head>
   <body>
     <header>
-      <h1>Bienvenue au restaurant</br>Emilie</h1>
+      <h1 class="divbias">Restaurant</br>Emi's</h1>
     </header>

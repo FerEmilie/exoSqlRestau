@@ -12,7 +12,7 @@ include('include/barrenav.php');
 
         <legend>Création de nouveau plat</legend>
     <label class="label" for="nom">Nom du plat: </label>
-    <input autofocus="autofocus" required="required" class="input" type="text" name="nom" size="50" maxlength="40" id="nom" /></br></br>
+    <input autofocus="autofocus" required="required" class="input" type="text" name="nom" maxlength="40" id="nom" /></br></br>
 
     <?php
     include("config/connection.php");
@@ -30,7 +30,7 @@ include('include/barrenav.php');
      ?>
 
     <label class="label" for="prix">Prix: </label>
-    <input autofocus="autofocus" placeholder="euros"  class="input" type="text" name="prix" size="50" maxlength="40" id="prix" /></br></br>
+    <input autofocus="autofocus" placeholder="euros"  class="input" type="text" name="prix" maxlength="40" id="prix" /></br></br>
 
     <label for="image">Votre photo de plat :</label>
     <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
