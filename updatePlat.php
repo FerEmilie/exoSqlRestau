@@ -11,7 +11,7 @@ include('include/barrenav.php');
          <input autofocus="autofocus" placeholder="Actuel -> <?php echo $_GET['nom']; ?>" required="required" class="input" type="text" name="nom" size="50" maxlength="40" id="nom" /></br></br>
 
          <label class="label" for="prix">Nouveau Prix: </label>
-         <input autofocus="autofocus" placeholder="Actuel -> <?php echo $_GET['prix']; ?>" class="input" type="text" name="prix" size="50" maxlength="40" id="prix" /></br></br>
+         <input autofocus="autofocus" placeholder="Actuel -> <?php echo $_GET['prix']; ?> euros" class="input" type="text" name="prix" size="50" maxlength="40" id="prix" /></br></br>
 
          <input type="submit" name="commit" value="Ajout" id="btn" /></br></br>
        </fieldset>
