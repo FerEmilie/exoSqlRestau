@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("config/connection.php");
 if (isset($_GET['id']) && !empty($_GET['id'])) {
  $id = $_GET['id'];

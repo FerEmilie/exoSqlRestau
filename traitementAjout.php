@@ -1,5 +1,5 @@
 <?php
-	//----------------------- CONNEXION A LA BDD ------------------------
+session_start();
 	  include("config/connection.php");
 
     if (isset($_POST['checkbox'])){
