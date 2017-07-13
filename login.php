@@ -18,8 +18,9 @@ session_start();
 include('include/header.php');
 include('include/barrenav.php');
 
-include("config/connection.php");
+if (isset($_POST['login'])) {
 
+include("config/connection.php");
 $req = $bdd->prepare('SELECT password FROM users WHERE login = :login');
 $req->execute(array('login' => $_POST['login']));
 $result = $req->fetch(PDO::FETCH_ASSOC);
@@ -31,19 +32,22 @@ header('Location: gestion.php');
 }else{
 echo 'mot de passe invalide';
 }
+}
 ?>
 
 <div class="form">
-  <h1>Sign In</h1>
-  <form action="gestion.php" method="post">
-
+  <h2>Accès à l'admin</h2>
+  <form id="form" action="gestion.php" method="post">
+    <fieldset>
+        <legend>Se connecter</legend>
     <label class="label" for="login">Login</label>
-    <input class="input" type="text" name="login" size="50" maxlength="40" />
+    <input class="input" type="text" name="login" size="50" maxlength="40" /></br></br>
 
     <label class="label" for="password">Password</label>
-    <input class="input" type="password" name="password" size="50" maxlength="40" />
+    <input class="input" type="password" name="password" size="50" maxlength="40" /></br></br>
 
-    <button id='btn'>Sign In</button>
+    <button id='btn'>Login</button>
+    </fieldset>
     </form>
     </div>
 <?php
