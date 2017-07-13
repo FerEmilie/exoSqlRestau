@@ -2,7 +2,17 @@
 session_start();
  if (isset($_SESSION['login']) && $_SESSION['password']) {
       session_start();
-      header('Location: gestion.php');
+      $id = $_GET['id'];
+      if ($id == 1) {
+          header('Location: plat.php');
+      }
+      if ($id == 2) {
+          header('Location: menu.php');
+      }
+      if ($id == 3) {
+          header('Location: gestion.php');
+      }
+
  }
 
 include('include/header.php');
