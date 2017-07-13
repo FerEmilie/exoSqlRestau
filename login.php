@@ -39,7 +39,7 @@ echo 'mot de passe invalide';
   <h2>Accès à l'admin</h2>
   <form id="form" action="gestion.php" method="post">
     <fieldset>
-        <legend>Se connecter</legend>
+        <legend>Merci de vous connecter</legend>
     <label class="label" for="login">Login</label>
     <input class="input" type="text" name="login" size="50" maxlength="40" /></br></br>
 
