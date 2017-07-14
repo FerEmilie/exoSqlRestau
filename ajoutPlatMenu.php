@@ -35,7 +35,7 @@ include('include/barrenav.php');
 			echo '<br/><br/><input type="submit" class="valider" name="valider" value="valider" />
 		</fieldset></form>';
 
-
+    $reponse->closeCursor();
     ?>
     <?php
     include('include/footer.php');
