@@ -29,4 +29,7 @@ foreach($_POST['checkbox'] as $k => $check){
 }
  header('Location:menu.php');
  }
+ else {
+   echo 'Aucun plat n/a été selectionné ! Veuillez recommencer !';
+ }
 ?>

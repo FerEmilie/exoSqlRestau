@@ -20,22 +20,26 @@ include('include/barrenav.php');
          include("config/connection.php");
          $reponse = $bdd->query('SELECT plat.id AS id_plat, nom_plat FROM plat');
          echo '<p>Selectionner les plats à ajouter au menu: </p>';
+         echo'<div class="items">';
           while ($donnees = $reponse->fetch())
           {
             // var_dump($donnees['nom_plat']);
             // var_dump($check);
            if (in_array($donnees['nom_plat'], $plats)) {
-            echo'<input type="checkbox" checked="checked" name="checkbox[]" value="'.$donnees['id_plat'].'" />'.$donnees['nom_plat'];
+            echo'<input id="item'.$donnees['id_plat'].'" type="checkbox" checked="checked" name="checkbox[]" value="'.$donnees['id_plat'].'" /><label for="item'.$donnees['id_plat'].'">'.$donnees['nom_plat'].'</label>';
            }
            else{
-          echo'<input type="checkbox" name="checkbox[]" value="'.$donnees['id_plat'].'" />'.$donnees['nom_plat'];
+          echo'<input id="item'.$donnees['id_plat'].'" type="checkbox" name="checkbox[]" value="'.$donnees['id_plat'].'" /><label for="item'.$donnees['id_plat'].'">'.$donnees['nom_plat'].'</label>';
             }
           }
-
+          echo '
+               <h2 class="done" aria-hidden="true">Ajouté</h2>
+               <h2 class="undone" aria-hidden="true">A choisir</h2></div>';
           $reponse->closeCursor();
           ?>
 
-         <input type="submit" name="commit" value="Ajout" id="btn" /></br></br>
+        </br></br><input type="submit" name="commit" value="Valider" class="valider" /></br></br>
+         <p>*Les plats déjà existants dans le menu sont cochés, pour les supprimer du nouveau menu merci de les décocher</p>
        </fieldset>
      </form>
 

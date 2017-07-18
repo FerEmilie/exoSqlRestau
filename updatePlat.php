@@ -13,7 +13,7 @@ include('include/barrenav.php');
          <label class="label" for="prix">Nouveau Prix: </label>
          <input autofocus="autofocus" placeholder="Actuel -> <?php echo $_GET['prix']; ?> euros" class="input" type="text" name="prix" size="50" maxlength="40" id="prix" /></br></br>
 
-         <input type="submit" name="commit" value="Ajout" id="btn" /></br></br>
+         <input type="submit" name="commit" value="Valider" class="valider" /></br></br>
        </fieldset>
      </form>
 
