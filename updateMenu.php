@@ -18,7 +18,7 @@ include('include/barrenav.php');
          $plats = preg_split("/[-]+/", $_GET['plat']);
 
          include("config/connection.php");
-         $reponse = $bdd->query('SELECT plat.id AS id_plat, nom_plat FROM plat');
+         $reponse = $bdd->query('SELECT plat.id AS id_plat, nom_plat FROM plat ORDER BY id_type_plat');
          echo '<p>Selectionner les plats à ajouter au menu: </p>';
          echo'<div class="items">';
           while ($donnees = $reponse->fetch())

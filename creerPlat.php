@@ -6,7 +6,7 @@ include('include/barrenav.php');
 
 <div class="form">
   <h2>Ajouter un nouveau plat</h2>
-  <form id="form" action="traitement.php" method="post">
+  <form id="form" action="traitement.php" enctype="multipart/form-data" method="post">
     <fieldset>
 
         <legend>Création de nouveau plat</legend>
